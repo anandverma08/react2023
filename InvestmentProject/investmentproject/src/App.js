@@ -35,7 +35,7 @@ function App() {
   }
 
   return (
-    <div className="parent">
+    <React.Fragment className="parent">
       <Header />
 
       <InvestmentForm onFormSubmit={calculateHandler} onFormReset={resetHandler}/>
@@ -45,7 +45,7 @@ function App() {
       ) : (
         <Table yearlyData={yearlyData} initialSaving={initialSaving} />
       )}
-    </div>
+    </React.Fragment>
   );
 }
 
